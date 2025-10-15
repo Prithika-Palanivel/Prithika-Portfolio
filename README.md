@@ -1,1 +1,252 @@
 # Prithika-Portfolio
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Prithika P — AI & UI/UX Designer Portfolio</title>
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(180deg, #f5f5ff 0%, #fffaf5 100%);
+      overflow-x: hidden;
+      scroll-behavior: smooth;
+      color: #333;
+    }
+
+    .gradient-text {
+      background: linear-gradient(to right, #a78bfa, #f9a8d4);
+      -webkit-background-clip: text;
+      color: transparent;
+    }
+
+    .floating {
+      animation: float 6s ease-in-out infinite;
+    }
+
+    @keyframes float {
+      0% { transform: translateY(0px); }
+      50% { transform: translateY(-12px); }
+      100% { transform: translateY(0px); }
+    }
+
+    .glass {
+      background: rgba(255, 255, 255, 0.35);
+      backdrop-filter: blur(12px);
+      border: 1px solid rgba(255, 255, 255, 0.4);
+    }
+
+    html::-webkit-scrollbar {
+      width: 8px;
+    }
+    html::-webkit-scrollbar-thumb {
+      background: linear-gradient(#a78bfa, #f9a8d4);
+      border-radius: 20px;
+    }
+
+    .project-img {
+      transition: all 0.4s ease-in-out;
+    }
+    .project-card:hover .project-img {
+      transform: scale(1.05);
+      filter: brightness(1.08);
+    }
+  </style>
+</head>
+
+<body class="text-gray-800">
+
+  <!-- Navbar -->
+  <header class="flex justify-between items-center px-10 py-5 bg-white/60 backdrop-blur-lg fixed top-0 left-0 w-full shadow-md z-50">
+    <h1 class="text-2xl font-bold gradient-text">Prithika P</h1>
+    <nav class="hidden md:flex space-x-6 font-medium">
+      <a href="#projects" class="hover:text-purple-400">Projects</a>
+      <a href="#experience" class="hover:text-purple-400">Experience</a>
+      <a href="#skills" class="hover:text-purple-400">Skills</a>
+      <a href="#certificates" class="hover:text-purple-400">Certificates</a>
+      <a href="#contact" class="hover:text-purple-400">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="pt-32 pb-20 text-center relative overflow-hidden">
+    <div class="absolute -top-20 left-0 w-80 h-80 bg-purple-200 opacity-30 rounded-full blur-3xl floating"></div>
+    <div class="absolute bottom-0 right-0 w-96 h-96 bg-pink-200 opacity-30 rounded-full blur-3xl floating"></div>
+
+    <h1 class="text-5xl font-extrabold mb-4 gradient-text relative z-10" data-aos="fade-up">Hi, I’m Prithika 👋</h1>
+    <p class="max-w-3xl mx-auto text-gray-700 text-lg relative z-10" data-aos="fade-up" data-aos-delay="100">
+      Aspiring <span class="font-semibold text-purple-500">AI & Data Science Engineer</span>  
+      & creative <span class="font-semibold text-pink-500">UI/UX Designer</span>.  
+      I craft visually engaging, data-driven, and user-centered digital experiences.
+    </p>
+
+    <div class="mt-10 space-x-4 relative z-10" data-aos="fade-up" data-aos-delay="200">
+      <a href="#projects" class="bg-purple-500 text-white px-6 py-3 rounded-xl font-semibold hover:bg-purple-600 transition shadow-lg">View My Work</a>
+      <a href="#contact" class="border border-purple-500 text-purple-500 px-6 py-3 rounded-xl font-semibold hover:bg-purple-500 hover:text-white transition shadow-lg">Contact Me</a>
+    </div>
+  </section>
+
+  <!-- Education -->
+  <section id="education" class="py-20 px-8">
+    <div class="max-w-5xl mx-auto text-center" data-aos="fade-up">
+      <h2 class="text-3xl font-bold mb-8">🎓 Education</h2>
+      <div class="glass rounded-2xl p-8 shadow-xl">
+        <img src="https://cdn.pixabay.com/photo/2017/06/10/07/18/graduation-2387669_1280.png" class="mx-auto w-24 mb-4" alt="Education Icon">
+        <h3 class="text-xl font-semibold text-purple-500">B.Tech — Artificial Intelligence & Data Science</h3>
+        <p class="text-gray-600 mt-2">S.A. Engineering College, Avadi</p>
+        <p class="text-gray-500 mt-1">GPA: 8.54 (Till 6th Sem)</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience -->
+  <section id="experience" class="py-24 px-8 bg-gradient-to-br from-purple-50 to-pink-50">
+    <h2 class="text-3xl font-bold mb-10 text-center">💼 Experience</h2>
+    <div class="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
+      
+      <div class="glass rounded-2xl p-6 shadow-md" data-aos="fade-up">
+        <h3 class="font-semibold text-lg text-purple-500">Shiash Info Solutions — Intern</h3>
+        <p class="text-sm text-gray-600 mb-2">Dec 2024 – Feb 2025</p>
+        <ul class="text-gray-700 text-sm list-disc ml-5">
+          <li>Built ML models for recommendation & segmentation.</li>
+          <li>Designed dashboards to communicate model insights.</li>
+          <li>Collaborated with data engineers to productionize pipelines.</li>
+        </ul>
+      </div>
+
+      <div class="glass rounded-2xl p-6 shadow-md" data-aos="fade-up" data-aos-delay="100">
+        <h3 class="font-semibold text-lg text-purple-500">TechnoHacks EduTech — Intern</h3>
+        <p class="text-sm text-gray-600 mb-2">Aug 2024 – Sep 2024</p>
+        <ul class="text-gray-700 text-sm list-disc ml-5">
+          <li>Worked on public datasets and prototype dashboards.</li>
+          <li>Improved data cleaning and EDA workflows.</li>
+        </ul>
+      </div>
+
+      <div class="glass rounded-2xl p-6 shadow-md" data-aos="fade-up" data-aos-delay="200">
+        <h3 class="font-semibold text-lg text-purple-500">MSME — Part Time Intern</h3>
+        <p class="text-sm text-gray-600 mb-2">Aug 2024 – Sep 2024</p>
+        <p class="text-gray-700 text-sm">Exposure to microcontrollers, sensors and applied IoT solutions.</p>
+      </div>
+
+      <div class="glass rounded-2xl p-6 shadow-md" data-aos="fade-up" data-aos-delay="300">
+        <h3 class="font-semibold text-lg text-purple-500">Ulektz — Intern</h3>
+        <p class="text-sm text-gray-600 mb-2">Jun 2025 – Jul 2025</p>
+        <p class="text-gray-700 text-sm">Built Excel dashboards and contributed to predictive model analysis.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Certificates Section -->
+<section id="certificates" class="py-24 px-8 bg-gradient-to-br from-purple-50 to-pink-50">
+  <h2 class="text-3xl font-bold mb-12 text-center">🏆 Certificates</h2>
+  <div class="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+
+    <div class="glass rounded-2xl p-6 shadow-md" data-aos="fade-up">
+      <img src="https://cdn.pixabay.com/photo/2018/05/07/21/05/medal-3386575_1280.png" class="mx-auto w-16 mb-4">
+      <h3 class="font-semibold text-purple-500 mb-2">Elewayte</h3>
+      <p class="text-gray-700 text-sm">Artificial Intelligence and Data Science.</p>
+    </div>
+
+    <div class="glass rounded-2xl p-6 shadow-md" data-aos="fade-up" data-aos-delay="100">
+      <img src="https://cdn.pixabay.com/photo/2016/04/01/09/01/trophy-1299357_1280.png" class="mx-auto w-16 mb-4">
+      <h3 class="font-semibold text-purple-500 mb-2">Infosys Springboard</h3>
+      <p class="text-gray-700 text-sm">Basics of python,Working with Functions in C program,Email writing skills.</p>
+    </div>
+
+    <div class="glass rounded-2xl p-6 shadow-md" data-aos="fade-up" data-aos-delay="200">
+      <img src="https://cdn.pixabay.com/photo/2013/07/12/13/07/award-147248_1280.png" class="mx-auto w-16 mb-4">
+      <h3 class="font-semibold text-purple-500 mb-2">Coursera</h3>
+      <p class="text-gray-700 text-sm">Badge in Data Engineer course.</p>
+    </div>
+
+    <div class="glass rounded-2xl p-6 shadow-md" data-aos="fade-up" data-aos-delay="300">
+      <img src="https://cdn.pixabay.com/photo/2017/01/12/21/05/medal-1975480_1280.png" class="mx-auto w-16 mb-4">
+      <h3 class="font-semibold text-purple-500 mb-2">HP LIFE Foundation</h3>
+      <p class="text-gray-700 text-sm">Introduction to Cybersecurity Awareness,Data Science & Analytics.</p>
+    </div>
+
+    <div class="glass rounded-2xl p-6 shadow-md" data-aos="fade-up" data-aos-delay="400">
+      <img src="https://cdn.pixabay.com/photo/2016/04/01/09/01/trophy-1299357_1280.png" class="mx-auto w-16 mb-4">
+      <h3 class="font-semibold text-purple-500 mb-2">NCAT 2025</h3>
+      <p class="text-gray-700 text-sm">Participated in the All India NCAT 2025 Career Aptitude Test conducted by Naukri.</p>
+    </div>
+
+  </div>
+</section>
+
+
+  <!-- Projects -->
+  <section id="projects" class="py-24 px-8 max-w-6xl mx-auto">
+    <h2 class="text-3xl font-bold mb-12 text-center">🚀 Projects</h2>
+
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-10">
+
+      <div class="glass rounded-2xl p-6 shadow-xl project-card hover:scale-105 transition transform duration-300" data-aos="zoom-in">
+        <img src="https://cdn.pixabay.com/photo/2023/01/23/13/33/brain-7738574_1280.jpg" class="rounded-xl mb-4 project-img" alt="Brain Tumor Detection">
+        <h3 class="font-semibold text-lg text-purple-500">Brain Tumor Detection (U-Net & EfficientNet)</h3>
+        <p class="text-gray-700 text-sm mb-4">DL-based segmentation & classification for tumor detection, with clinician-friendly UI visualization.</p>
+      </div>
+
+      <div class="glass rounded-2xl p-6 shadow-xl project-card hover:scale-105 transition transform duration-300" data-aos="zoom-in" data-aos-delay="100">
+        <img src="https://cdn.pixabay.com/photo/2023/02/01/09/12/real-estate-7762329_1280.jpg" class="rounded-xl mb-4 project-img" alt="House Price Prediction">
+        <h3 class="font-semibold text-lg text-purple-500">House Price Prediction (ML)</h3>
+        <p class="text-gray-700 text-sm mb-4">Random Forest & Linear Regression models with Power BI insights visualization.</p>
+      </div>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills" class="py-24 px-8 bg-white/60">
+    <h2 class="text-3xl font-bold mb-10 text-center">🧠 Skills & Tools</h2>
+    <div class="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto text-center">
+      <div class="glass p-6 rounded-2xl shadow-md" data-aos="fade-up">
+        <h3 class="font-semibold text-lg mb-2 text-purple-500">Technical Skills</h3>
+        <p class="text-gray-700">Python, C, SQL, Pandas, Basics of Java</p>
+      </div>
+      <div class="glass p-6 rounded-2xl shadow-md" data-aos="fade-up" data-aos-delay="100">
+        <h3 class="font-semibold text-lg mb-2 text-purple-500">Design Skills</h3>
+        <p class="text-gray-700">Figma, Usability Testing, Design Systems</p>
+      </div>
+      <div class="glass p-6 rounded-2xl shadow-md" data-aos="fade-up" data-aos-delay="200">
+        <h3 class="font-semibold text-lg mb-2 text-purple-500">Soft Skills</h3>
+        <p class="text-gray-700">Communication, Teamwork, Problem-Solving, Presentation</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="py-24 bg-gradient-to-r from-purple-400 to-pink-400 text-center text-white">
+    <h2 class="text-3xl font-bold mb-4">💌 Get In Touch</h2>
+    <p class="max-w-2xl mx-auto text-purple-100 mb-8">
+      Open to internships, collaborations, or AI-driven UX projects. Let’s create something impactful!
+    </p>
+    <div class="flex justify-center gap-4 flex-wrap">
+      <a href="mailto:chennaiprithika982@gmail.com" class="bg-white text-purple-500 px-8 py-3 rounded-xl font-semibold hover:bg-purple-100 transition">
+        Email Me
+      </a>
+      <a href="https://www.linkedin.com/in/prithika-palanivel" target="_blank" class="bg-white text-purple-700 px-8 py-3 rounded-xl font-semibold hover:bg-purple-100 transition flex items-center justify-center gap-2">
+        <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn" class="w-5 h-5"> LinkedIn
+      </a>
+    </div>
+  </section>
+
+  <footer class="py-6 bg-white text-center text-gray-500 text-sm">
+    © <span id="year"></span> Prithika P — Designed for 💜 UI/UX Designer
+  </footer>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({ duration: 900, offset: 120, once: true });
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+  
+
+
+</body>
+</html>
